@@ -1,0 +1,25 @@
+program to print n numbers with comma saparetor 
+input
+5
+  outptut
+1,2,3,4,5,
+  program:
+#include <stdio.h>
+
+void main() {
+int i,n,flag;
+scanf("%d",&n);
+i=n;
+flag=0;
+while(i>=1)
+{
+    if(flag==0){
+    printf("%d",i);
+    flag=1;
+    }
+    else{
+    printf(",%d",i);
+}
+i--;
+}
+}
